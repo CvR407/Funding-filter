@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filter Research Funding Opportunities</title>
+
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; }
+  h1 { color: #005fb8; }
+  .filters { margin-bottom: 20px; }
+  .filters select { margin-right: 10px; padding: 5px; }
+  .funding-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #fff;
+  }
+  .hidden { display: none; }
+</style>
+</head>
+
+<body>
+<h1>Filter Research Funding Opportunities</h1>
+
+<div class="filters">
+  <label for="career">Career Stage:</label>
+  <select id="career">
+    <option value="">All</option>
+    <option value="diverse">Diverse</option>
+    <option value="early">Early Career</option>
+    <option value="mid">Mid Career</option>
+    <option value="senior">Senior</option>
+  </select>
+
+  <label for="deadline">Deadline:</label>
+  <select id="deadline">
+    <option value="">All</option>
+    <option value="open">Open Calls</option>
+    <option value="fixedwinter">Fixed Winter</option>
+    <option value="fixedspring">Fixed Spring</option>
+    <option value="fixedautumn">Fixed Autumn</option>
+    <option value="fixeddiverse">Fixed diverse</option>
+  </select>
+
+  <label for="size">Funding Size:</label>
+  <select id="size">
+    <option value="">All</option>
+    <option value="small">Small</option>
+    <option value="medium">Medium</option>
+    <option value="large">Large</option>
+  </select>
+
+  <label for="funder">Funder:</label>
+  <select id="funder">
+    <option value="">All</option>
+    <option value="nfr">NFR</option>
+    <option value="eu">EU</option>
+    <option value="other">Other</option>
+  </select>
+
+  <label for="type">Research type:</label>
+  <select id="type">
+    <option value="">All</option>
+    <option value="bottomup">Bottom-up</option>
+    <option value="programmed">Programmed research</option>
+  </select>
+
+  <label for="purpose">Purpose:</label>
+  <select id="purpose">
+    <option value="">All</option>
+    <option value="excellentresearch">Excellent research</option>
+    <option value="mobiltyandtraining">Mobility & Training</option>
+    <option value="collaboration">Collaboration</option>
+    <option value="innovation">Innovation</option>
+    <option value="seed">Seed funding</option>
+    <option value="travel">Travel grants</option>
+  </select>
+</div>
+
+
+<div id="cards">
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixedwinter"
+       data-size="medium"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/branco-weiss-postdoctoral-fellowship"</a></h3>
+    <p>Branco Weiss Postdoctoral Fellowship</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+   <h3><a href="https://mitt.uib.no/courses/32627/pages/cas-research-grant-2"</a></h3>
+    <p>CAS Research Grant</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="open"
+       data-size="medium"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/cost</"</a></h3>
+    <p>COST Network</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="other"
+       data-type="programmed"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/eea-norway-grants"</a></h3>
+    <p>EEA/Norway Grants</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="innovation">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/eic-pathfinder"</a></h3>
+    <p>EIC Pathfinder</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="open"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/embo-funding-for-early-career-scientists"</a></h3>
+    <p>EMBO funding for early career scientists</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/erasmus+"</a></h3>
+    <p>ERASMUS+</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="nfr"
+       data-type="programmed"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/european-partnerships"</a></h3>
+    <p>European Partnerships</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="fixeddiverse"
+       data-size="large"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/european-research-council-erc"</a></h3>
+    <p>ERC</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="open"
+       data-size="small"
+       data-funder="nfr"
+       data-type="bottomup"
+       data-purpose="innovation">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/fripro-radical-research-ideas-for-early-career-scientists"</a></h3>
+    <p>Radical Research Ideas for Early Career Scientists</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="open"
+       data-size="medium"
+       data-funder="nfr"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/fripro-researcher-project-with-international-mobility"</a></h3>
+    <p>FRIPRO Researcher Project with International Mobility</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="open"
+       data-size="large"
+       data-funder="nfr"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/fripro-researcher-project-for-experienced-scientists"</a></h3>
+    <p>FRIPRO Experienced Researcher Project</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="open"
+       data-size="large"
+       data-funder="nfr"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+       <h3><a href=""https://mitt.uib.no/courses/32627/pages/fripro-researcher-project-for-early-career-scientists"</a></h3>
+    <p>FRIPRO Early Career Researcher Project</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/fulbright"</a></h3>
+    <p>Fulbright</p>
+  </div>
+
+    <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://www.uib.no/en/foremployees/162864/offers-employees-through-uibs-national-and-international-collaborations#infrastructure-and-resources"</a></h3>
+    <p>Funding through UiB's networks</p>
+  </div>
+
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixedwinter"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="seed">
+   <h3><a href="https://mitt.uib.no/courses/32627/pages/funds-and-bequests-at-uib"</a></h3>
+    <p>Funds and Bequests at UiB</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+   <h3><a href="https://mitt.uib.no/courses/32627/pages/hfsp-postdoctoral-fellowship"</a></h3>
+    <p>HFSP Postdoctoral Fellowships</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/hfsp-research-grant"</a></h3>
+    <p>HFSP Research Grants</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/hfsp-research-grant-early-career"</a></h3>
+    <p>HFSP Early Career Grants</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="senior"
+       data-deadline="fixeddiverse"
+       data-size="large"
+       data-funder="eu"
+       data-type="programmed"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/horizon-europe-pillar-2"</a></h3>
+    <p>Horizon Europe Pillar 2</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixedwinter"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="seed">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/meltzer"</a></h3>
+    <p>L. Meltzer's Research Fund</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="senior"
+       data-deadline="fixeddiverse"
+       data-size="large"
+       data-funder="eu"
+       data-type="programmed"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/missions"</a></h3>
+    <p>Missions</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="eu">
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/msca-cofund"</a></h3>
+    <p>MSCA COFUND</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixeddiverse"
+       data-size="small"
+       data-funder="eu"
+       data-type="programmed"
+       data-purpose="mobilityandtraining">
+    <h3><a href="3>https://mitt.uib.no/courses/32627/pages/msca-doctoral-networks"</a></h3>
+    <p>MSCA Doctoral Networks</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixedautumn"
+       data-size="small"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/msca-postdoctoral-fellowships"</a></h3>
+    <p>MSCA Postdoctoral Fellowships</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="fixedspring"
+       data-size="medium"
+       data-funder="eu"
+       data-type="bottomup"
+       data-purpose="mobilityandtraining">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/msca-staff-exchange"</a></h3>
+    <p>MSCA Staff Exchange</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="fixedwinter"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/nansen-fund"</a></h3>
+    <p>Nansen Fund</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixedspring"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/peder-sather-center-for-advanced-study"</a></h3>
+    <p>Peder Sather Center for Advanced Study</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="fixeddiverse"
+       data-size="medium"
+       data-funder="nfr"
+       data-type="programmed"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/rcn-collaborative-and-knowledge-building-project"</a></h3>
+    <p>RCN Collaborative and Knowledge-building Project</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="diversespring"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="seed">
+    <h3><a href="httpsmitt.uib.no/courses/32627/pages/spire"</a></h3>
+    <p>Spire</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="mid"
+       data-deadline="diversespring"
+       data-size="medium"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="excellentresearch">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/trond-mohn-foundation-starting-grant"</a></h3>
+    <p>TMF Starting Grant</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="open"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="innovation">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/uib-ide"</a></h3>
+    <p>UiB Idé</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="diverse"
+       data-deadline="open"
+       data-size="small"
+       data-funder="nfr"
+       data-type="bottomup"
+       data-purpose="seed">
+    <h3><a href="https://www.uib.no/en/foremployees/108210/project-establishment-support-pes"</a></h3>
+    <p>PES</p>
+  </div>
+
+  <div class="funding-card"
+       data-career="early"
+       data-deadline="fixedwinter"
+       data-size="small"
+       data-funder="other"
+       data-type="bottomup"
+       data-purpose="collaboration">
+    <h3><a href="https://mitt.uib.no/courses/32627/pages/young-cas-grant"</a></h3>
+    <p>Young CAS Grant</p>
+  </div>
+
+</div>
+
+
+<script>
+  const selects = document.querySelectorAll('.filters select');
+  const cards = document.querySelectorAll('.funding-card');
+
+  function filterCards() {
+    const filters = {
+      career: document.getElementById('career').value,
+      deadline: document.getElementById('deadline').value,
+      size: document.getElementById('size').value,
+      funder: document.getElementById('funder').value,
+      type: document.getElementById('type').value,
+      purpose: document.getElementById('purpose').value,
+    };
+
+    cards.forEach(card => {
+      const visible = Object.entries(filters).every(([key, value]) =>
+        !value || card.dataset[key].includes(value)
+      );
+
+      card.classList.toggle('hidden', !visible);
+    });
+  }
+
+  selects.forEach(select => select.addEventListener('change', filterCards));
+</script>
+
+</body>
+</html>
